@@ -16,7 +16,7 @@ def get_chatgpt_response(query, output_path):
     # Generate answer
     t = time.time()
     completion = client.chat.completions.create(
-    model="gpt-3.5-turbo",
+    model="gpt-4o-mini-audio",
     messages=[
         {"role": "system", "content": "You are an assistant. Always generate short, succint responses, in 1 to 2 lines."},
         {"role": "user", "content": query}
